@@ -11,9 +11,7 @@ zincblende, rutile — in [axby-np-stoichiometry/](axby-np-stoichiometry/); see
 its [COMPARISON.md](axby-np-stoichiometry/COMPARISON.md).
 
 The useful output is an exact set of formulas for saturated axis-aligned boxes,
-especially the `n x n x n` nanocube.  The resulting integer sequences are very
-elementary, but they have a clear crystallographic interpretation and can be
-submitted to the OEIS if presented modestly.
+especially the `n x n x n` nanocube.  The resulting integer sequences are elementary, but they have a clear crystallographic interpretation.
 
 ## Key results
 
