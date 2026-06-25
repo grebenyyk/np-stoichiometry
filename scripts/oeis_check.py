@@ -16,7 +16,7 @@ def oeis_search(q):
     """Return list of result dicts, or [] if no match (OEIS returns null)."""
     try:
         url = OEIS + urllib.parse.quote(q)
-        req = urllib.request.Request(url, headers={"User-Agent": "fluorite-np-stoichiometry/1.0 (research)"})
+        req = urllib.request.Request(url, headers={"User-Agent": "np-stoichiometry/1.0 (research)"})
         with urllib.request.urlopen(req, timeout=20) as r:
             d = json.loads(r.read().decode())
     except Exception as e:

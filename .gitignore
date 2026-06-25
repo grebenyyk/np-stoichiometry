@@ -21,3 +21,7 @@ venv/
 # OS / editor
 .DS_Store
 *.swp
+
+# personal OEIS submission worksheets (kept local, not for the public repo)
+OEIS_CONTRIBUTION.md
+SUBMISSION_NaCl_excess.md

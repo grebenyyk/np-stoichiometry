@@ -6,6 +6,10 @@ including surface cations, keeps its full eightfold coordination by anions B:
 no surface reconstruction, charge relaxation, or chemistry beyond the fixed
 fluorite adjacency graph.
 
+This repository also contains a multi-structure extension — rock-salt, CsCl,
+zincblende, rutile — in [axby-np-stoichiometry/](axby-np-stoichiometry/); see
+its [COMPARISON.md](axby-np-stoichiometry/COMPARISON.md).
+
 The useful output is an exact set of formulas for saturated axis-aligned boxes,
 especially the `n x n x n` nanocube.  The resulting integer sequences are very
 elementary, but they have a clear crystallographic interpretation and can be
@@ -59,15 +63,14 @@ submitted to the OEIS if presented modestly.
 
    `N_A` and the odd-shell subsequences are already in the OEIS.  Direct OEIS
    searches currently return no match for the full `N_B` and full `excess`
-   sequences; see [OEIS_CONTRIBUTION.md](OEIS_CONTRIBUTION.md) for a cautious
-   submission strategy.
+   sequences; see [OEIS.md](OEIS.md) for the OEIS sequence identifications.
 
 ## Layout
 
 ```text
-fluorite-np-stoichiometry/
-├── README.md
-├── OEIS_CONTRIBUTION.md        # cautious OEIS submission strategy
+np-stoichiometry/
+├── README.md                   # this file (fluorite study)
+├── OEIS.md                     # OEIS sequence identifications
 ├── writeup/
 │   ├── main.tex                # LaTeX writeup of the exact counting result
 │   └── figures/                # generated plots for exact box families
@@ -78,8 +81,11 @@ fluorite-np-stoichiometry/
 │   ├── oeis_check.py           # live OEIS API lookup
 │   ├── plot_ratio.py           # generate figures for axis-aligned families
 │   └── run_all.sh              # run checks + figures + data table
-└── data/
-    └── sequences.csv           # n, N_A, N_B, excess, ... for n = 1..30
+├── data/
+│   └── sequences.csv           # n, N_A, N_B, excess, ... for n = 1..30
+└── axby-np-stoichiometry/      # multi-structure extension (NaCl, CsCl, ZnS, TiO2)
+    ├── COMPARISON.md           # full writeup across structure types
+    └── scripts/                # enumerators + closed forms for 5 structures
 ```
 
 ## Reproduce
